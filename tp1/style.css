@@ -1,0 +1,99 @@
+body {
+    background-color: #b4dd1e;
+    flex-direction: column;
+  }
+
+.panel {
+    height: 33.33vh; /* Each panel takes one-third of the viewport height */
+}
+
+.panel {
+    flex: 1; /* Each panel takes equal space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.panel:nth-child(1) { background: #3498db; } /* Blue */
+.panel:nth-child(2) { background: #2ecc71; } /* Green */
+.panel:nth-child(3) { background: #e74c3c; } /* Red */
+
+@media (max-width: 768px) {
+    .a {
+         display:none;
+    }
+    nav {
+        background-color: rgb(255, 0, 0);
+        width: 100vw;
+        font-size: 10vw;
+        word-wrap: break-word;
+        transform: translateY(-100px);
+    }
+
+}
+
+header {
+    background-color: rgb(28, 194, 216);
+    display: flex; /* Makes this a flex container */
+    justify-content: center; /* Align items horizontally (center, space-between, etc.) */
+    align-items: center; /* Align items vertically (center, flex-start, etc.) */
+    gap: 10px; /* Adds spacing between items */
+    width: 100vw;  /* Full width of viewport */
+    font-size: 10vw; /* Scales with screen width */
+    word-wrap: break-word;
+}
+
+nav {
+    background-color: rgb(255, 0, 0);
+    font-size: 3vw;
+    word-wrap: break-word;
+    display: flex; /* Makes this a flex container */
+    width: 30vw;  /* Full width of viewport */
+}
+
+h1 {
+    color: hsl(59, 100%, 26%);
+    text-align: right;
+    font-size: 150px;
+    width: 36vw;  /* Full width of viewport */
+    font-size: 3vw; /* Scales with screen width */
+    padding-left: 30%;
+    word-wrap: break-word;
+}
+
+table td, tr, th {
+    border : grey solid 1px;
+}
+
+i {
+    color : red;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+aside {
+    width: 40%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: rgb(255, 0, 204);
+}
+
+.main {
+    background-color: blueviolet;
+    width: 100vw;
+    font-size: 10vw;
+    word-wrap: break-word;
+
+}
+
+.sigle {
+    font-size: 50px;
+}

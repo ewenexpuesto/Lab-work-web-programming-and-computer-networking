@@ -1,0 +1,65 @@
+.custom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.custom-grid-button {
+    background-color: #252226;
+    color: #e0e0e0;
+    border-radius: 8px;
+    padding: 0.3em 0.3em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1rem;
+    max-width: 100%; /* Takes full width of the container on mobile */
+    width: auto; /* Let it adjust width based on content */
+    max-height: 200px; /* Prevents vertical stretching */
+    display: inline-block; /* Avoids taking full width on larger screens */
+}
+
+/* Adjusting layout on tablets */
+@media (min-width: 768px) {
+    .custom-grid-button {
+        padding: 1em 2em;
+        font-size: 1rem;
+        max-width: 200px; /* Sets width limit for tablets */
+    }
+}
+
+/* Further adjustments for desktop */
+@media (min-width: 1200px) {
+    .custom-grid-button {
+        padding: 0.3em 0.3em;
+        font-size: 1rem;
+        max-width: 300px; /* Limits button width on desktop */
+    }
+}
+
+
+
+
+.custom-grid-button:hover {
+    transform: translateY(-5px);
+    background-color: #9A1CEB;
+}
+
+.custom-grid-title {
+    font-size: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.custom-grid-icon {
+    margin: 0px 0;
+}
+
+.custom-grid-description {
+    font-size: 0.7em;
+    color: #b0b0b0;
+    margin-top: auto;  /* Pushes the description to the bottom */
+    margin-bottom: 10px;
+}

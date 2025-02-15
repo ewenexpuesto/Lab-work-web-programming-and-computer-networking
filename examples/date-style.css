@@ -1,0 +1,20 @@
+.clock-container {
+    color: #e6e6e6; /* Light text */
+    font-family: 'Digital-7', sans-serif; /* Digital-looking font */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    text-align: center;
+}
+
+.time {
+    font-size: 72px; /* Large size for the time display */
+    margin: 0;
+}
+
+.date {
+    font-size: 36px; /* Smaller size for the date display */
+    margin: 0;
+}

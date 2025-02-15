@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Navigation */
+nav {
+    border: 2px solid black; /* Adds a border around the nav */
+    margin-left:30%;
+    margin-right:30%;
+}
+
+nav ul {
+    width:100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    text-align: left;
+    border-bottom: 2px solid white; /* Line separator */
+}
+
+/* Default Link Styles */
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: deepskyblue; /* Default text color */
+    font-weight: bold;
+    width: 100%; /* Ensures the link fills the entire `<li>` */
+    box-sizing: border-box;
+}
+
+/* Background colors */
+nav li:nth-child(1) { 
+    background-color: lightblue;
+    border-bottom: 6px solid blue;
+    border-top: 6px solid blue;
+}
+
+/* Hover Effects */
+nav a:hover {
+    background-color: yellow;
+    color:red;
+}
