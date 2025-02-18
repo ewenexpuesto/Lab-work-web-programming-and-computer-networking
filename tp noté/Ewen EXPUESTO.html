@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<!-- To Do : Création de début, titre, etc. du document HTML et de la page (1 point à titre indicatif) -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel ="stylesheet" type="text/css" href="style.css">
+		<title>Tableau avec Style Cool</title>
+	</head>
+
+    <style>
+		header {
+			Position: fixed;
+			Top: 0;
+			Right: 0; 
+			Left: 0;
+		}
+		h1 {
+			text-align: center;
+			text-align:top;
+			margin-top:-30%;
+			margin-left:30%;
+		}
+        body {
+			background: #bcf7ff;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* To Do : background : utiliser linear-gradient avec votre propre choix des couleurs (1 point à titre indicatif) */ 
+        }
+		/* Gérer largeur et débordement/dépassement de Table (ça aide pour la responsiveness) */
+		table {
+			margin-left:-35%;
+			text-align:center;
+			width: 60%;  /* Pour éviter que table devient trop large */
+			border-collapse: collapse;
+			background: white;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			/* To Do : utiliser un bon choix de valeur pour la propriété overflow afin d'éviter débordement/dépassement (1 point à titre indicatif) */
+		}
+		/* Améliorer la lisibilité */
+        th { 
+			padding: 15px;  /* Augmente l'espace dans le header de table */
+			text-transform: uppercase; /* Améliore la lisibilité */
+            /* To Do : background : utiliser linear-gradient avec votre propre choix de couleurs (au moin 3 couleurs différentes) (2 point à titre indicatif) */ 
+            /* To Do: Couleur (votre propre choix) pour le texte de header de table (1 point à titre indicatif) */ 
+        }
+        td {
+			padding: 12px;  /* Plus d'espace pour les cases de table */
+			font-size: 16px; /* Pour une meilleure lisibilité*/
+			/* To Do : Insérer votre code pour garder le contenu texte aligné au centre (1 point à titre indicatif) */ 
+            border-bottom: 1px solid #ddd;
+			border-radius: 10px;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:nth-child(even) {
+            background-color: #79f0f2;
+        }
+
+		th:nth-child(1) {
+			background-image:  linear-gradient(to right,blue,white,red);
+			color : green;
+		}
+
+		th:nth-child(2) {
+			background-image:  linear-gradient(to right, blue,white,red);
+			color : green;
+		}
+
+		th:nth-child(3) {
+			background-image:  linear-gradient(to right, blue,white,red);
+			color : green;
+		}
+
+		tr:hover {
+			background-color: #ffed2a;
+		}
+		/* To Do :  ajouter des codes pour qu'en passant la souris la-dessus (voir le sujet pour les détailles), */ 
+		/* il faut que la couleur d'arrière plan de la case change à jaune (2 point à titre indicatif) */ 
+
+
+		/* Encore plus d'effets responsiveness */
+		@media (max-width: 768px) {
+			table {
+				width: 100%; /* Le table va utiliser le complet largeuer de l'écran en petits appareils */
+			}
+			th, td {
+				padding: 10px; /* Pour ajuster eux petits écrans */
+				font-size: 14px; /* Réduit la taille de texte pour une meilleure adaptation */
+			}
+		}
+    </style>
+
+<body>
+	<!-- To Do : Création de l'entête de la page comme exigé dans le sujet (3 point à titre indicatif) -->
+	<h1>Control Number 1 <br> <br> Ewen EXPUESTO</h1>
+	<div style = "clear:both;"></div>
+		<!-- To Do : Création de table sous le format exigé (3 point à titre indicatif) -->
+		<!-- Aide : chercher pour "rowspan" et "colspan" -->
+		<table>
+			<caption> </caption>
+			<tr><th>PRENOM</th><th>AGE</th><th>PAYS</th></tr>
+			<tr><td colspan="2"><strong>Alice</strong><td>France</td></tr>
+			<tr><td><strong>Friedrich</strong></td><td>22</td><td></td></tr>
+			<tr><td><strong>Adrien</strong></td><td>21</td><td rowspan="2">Canada</td></tr>
+			<tr><td><strong>Arnaud</strong></td><td>22</td></tr>
+		</table>
+		
+
+</body>
+
+</html>
