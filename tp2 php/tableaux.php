@@ -1,11 +1,11 @@
 <?php
     $data = [
-        [1, "Alice", 25],
-        [2, "Bob", 30],
-        [3, "Charlie", 22]
+        ["Alice", 25], # ça marche
+        ["Bob"],
+        ["Charlie"]
     ];
 
-    for ($i=0; $i<count($data); $i++) {
+    for ($i=0; $i<count($data); $i++) { # nombre de sous-tableaux dans le tableau à double entrée
         for ($j= 0; $j<count($data[$i]); $j++) {
             echo '<li>'. $data[$i][$j];
         }
@@ -28,12 +28,19 @@
         echo '</tr>';
     }
     echo '<table>';
+
+    echo '<br>';
+
+    # Autre manière de définir les tableaux
+    $menu["Lundi"]["Entrée"]="Salade";
+    $menu["Lundi"]["Plat"]="Boudin/Purée";
+    $menu["Mardi"]["Entrée"]="Tomates";
+    print_r($menu);
 ?>
 
 <style>
 /* This is how to include css */
-table {
-    border-color: aliceblue;
-    border-radius: 10px;
+table td {
+    border: 1px solid;
 }
 </style>
